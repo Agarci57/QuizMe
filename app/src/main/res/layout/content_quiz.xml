@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,27 +8,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:columnCount="2"
+    android:rowCount="4"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.quizme.garbytes.quizme.QuizActivity"
     tools:showIn="@layout/activity_quiz"
    >
 
     <TextView
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the quiz app!"
+        android:text="@string/question_text"
         android:id="@+id/textView" />
 
     <Button
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="@string/submit_button"
         android:id="@+id/button"
         android:layout_marginBottom="94dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorDeepskyBlue"/>
 
-
-
-</RelativeLayout>
+</GridLayout>
