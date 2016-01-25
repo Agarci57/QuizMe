@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.quizme.garbytes.quizme.QuizActivity"
-    tools:showIn="@layout/activity_quiz">
+    tools:showIn="@layout/activity_quiz"
+   >
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +27,7 @@
         android:layout_marginBottom="94dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorDodgerBlue"/>
+        android:background="@color/colorDeepskyBlue"/>
 
 
 
