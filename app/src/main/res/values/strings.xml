@@ -3,4 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="submit_button">Submit</string>
     <string name="question_text">Rule number 1. Do not hardcode strings. It will make life easier in the future</string>
+    <string name="answerA">Answer A</string>
+    <string name="answerB">Answer B</string>
+    <string name="answerC">Answer C</string>
+    <string name="answerD">Answer D</string>
 </resources>
