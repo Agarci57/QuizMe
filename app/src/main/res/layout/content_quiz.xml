@@ -10,33 +10,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:gravity="center"
-    android:columnCount="2"
-    android:rowCount="4"
+    android:columnCount="3"
+    android:rowCount="8"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.quizme.garbytes.quizme.QuizActivity"
-    tools:showIn="@layout/activity_quiz"
-   >
+    tools:context="com.quizme.garbytes.quizme.QuizActivity">
 
     <TextView
         android:layout_column="0"
         android:layout_columnSpan="2"
         android:layout_row="0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/question_text"
         android:id="@+id/textView" />
 
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HERE WE ASK THE QUESTION"
+        android:id="@+id/Questions"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <RadioButton
+        android:text="Choice A"
+        android:id="@+id/radioButton"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_gravity="left|center|top"
+        android:checked="false"
+        android:layout_width="wrap_content" />
+
     <Button
         android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:layout_row="3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_row="7"
         android:text="@string/submit_button"
         android:id="@+id/submit_button"
         android:layout_marginBottom="94dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorDeepskyBlue"/>
+        android:background="@color/colorDeepskyBlue" />
 
 </GridLayout>
