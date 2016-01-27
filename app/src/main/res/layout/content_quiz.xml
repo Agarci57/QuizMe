@@ -36,34 +36,34 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/answerA"
-        android:id="@+id/answerA"
-        android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answerA"
+            android:id="@+id/answerA"
+            android:checked="false" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/answerB"
-        android:id="@+id/answerB"
-        android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answerB"
+            android:id="@+id/answerB"
+            android:checked="false" />
 
-    <RadioButton
-        android:text="@string/answerC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/answerC"
-        android:checked="false" />
+        <RadioButton
+            android:text="@string/answerC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerC"
+            android:checked="false" />
 
-    <RadioButton
-        android:text="@string/answerD"
-        android:id="@+id/answerD"
-        android:checked="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
- /></RadioGroup>
+        <RadioButton
+            android:text="@string/answerD"
+            android:id="@+id/answerD"
+            android:checked="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
 
     <Button
         android:text="@string/submit_button"
@@ -71,9 +71,8 @@
         android:background="@color/colorDeepskyBlue"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_marginBottom="103dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp" />
 
 </RelativeLayout>
