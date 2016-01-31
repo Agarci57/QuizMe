@@ -9,11 +9,28 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
     private Button mSubmitButton;
+    private RadioButton mAnswereAButton;
+    private RadioButton mAnswereBButton;
+    private RadioButton mAnswereCButton;
+    private RadioButton mAnswereDButton;
+    private TextView mQuestionText;
+
+    //Here we are calling the TrueFalse constructor several times and create an array of TrueFlase objects
+    //This is actually bad practise but we will leave it like so to not make this project too complex
+    private TrueFalse[] mQuestionBank = new TrueFalse[]{
+            new TrueFalse(R.string.question1,true),
+            new TrueFalse(R.string.question2,true),
+            new TrueFalse(R.string.question3,true),
+            new TrueFalse(R.string.question4,true),
+    };
+
+    private int mCurrentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
