@@ -14,7 +14,7 @@
     android:rowCount="10"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.quizme.garbytes.quizme.QuizActivity">
-
+<!--hello how are you-->
     <TextView
         android:text="@string/question_text"
         android:id="@+id/question_text_view"
